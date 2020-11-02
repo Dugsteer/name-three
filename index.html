@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content=" A fun, free  online food card matching game for learning English from Esl-ology.com"
+      content=" A fun, free  online vocabulary game for learning English from Esl-ology.com"
     />
     <meta
       name="keywords"
-      content="Clothes matching vocabulary online ESL game"
+      content="Name three list vocabulary online ESL game"
     />
-    <title>Food Matching Game</title>
+    <title>Name Three Things Game</title>
     <link rel="icon" type="image/png" href="favicon.png" ; />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="csi.min.js"></script>
@@ -34,7 +34,7 @@
       <h3 class="nav-bar__title">Esl-Ology.Com</h3>
       <div class="nav-bar__title-page">
         <span class="nav-bar__title-page-main" id="pageTitle"
-          >FOOD MATCHING FUN</span
+          >NAME THREE...</span
         >
       </div>
       <div class="nav-bar__links">
@@ -69,61 +69,67 @@
           </div>
         </div>
         <div class="introduction__text">
-          <h1>FREE FOOD FUN!</h1>
+          <h1>CAN YOU GUESS NUMBER ONE?</h1>
           <p>
-            Match the foods to their names by clicking on the cards to turn them
-            over. The team with the most pairs wins! There are three sets to
-            choose from.
+            Name three things in each category and score points according to the table. Currently there are ten categories:<span class="bluey"> places to eat, vehicles, fruits, weather, pets, clothes, colors, jobs, places in town</span> and<span class="bluey"> sports.</span>
           </p>
-          <div class="introduction__choices">
-            <button class="introduction__set" id="set1">Set 1</button>
-            <p class="setlist">
-              apple, banana, bread, burger, cake, carrot, chicken, chips
-            </p>
-
-            <button class="introduction__set" id="set2">Set 2</button>
-            <p class="setlist">
-              donut, egg, fish, grapes, honey, ice-cream, jam, kiwi
-            </p>
-
-            <button class="introduction__set" id="set3">Set 3</button>
-            <p class="setlist">
-              lettuce, mushrooms, nuts, onion, pizza, potatoes, spaghetti,
-              tomato
-            </p>
-          </div>
+          
         </div>
       </div>
 
-      <div class="game-container">
-        <div class="empty"></div>
-        <div class="h4 letter1">A</div>
-        <div class="h4 letter2">B</div>
-        <div class="h4 letter3">C</div>
-        <div class="h4 letter4">D</div>
-        <div class="empty"></div>
-        <div class="h4 number1">1</div>
-        <div class="h4 number2">2</div>
-        <div class="h4 number3">3</div>
-        <div class="h4 number4">4</div>
+    <div class="game-container">
+      <div class="container">
 
-        <div class="game-tiles game-tiles1 showTiles" id="game-tiles"></div>
+        <div class="top">
+            <h2 class="header" id="answer0">NAME THREE...</h2>
+        </div>
+        <div class="div1">
+            <p class="answers" id="answer1"></p>
+        </div>
+        <div class="points-div">10</div>
+
+        <div class="div2">
+            <p class="answers" id="answer4"></p>
+        </div>
+        <div class="points-div">3</div>
+
+        <div class="div3">
+            <p class="answers" id="answer2"></p>
+        </div>
+        <div class="points-div">5</div>
+
+        <div class="div4">
+            <p class="answers" id="answer5"></p>
+        </div>
+        <div class="points-div">2</div>
+
+        <div class="div5">
+            <p class="answers" id="answer3"></p>
+        </div>
+        <div class="points-div">4</div>
+
+        <div class="div6">
+            <p class="answers" id="answer6"></p>
+        </div>
+        <div class="points-div">15</div>
       </div>
+      <div class="press"><button class="but" onclick="mainlist();">Click</button></div>
+    </div>
 
       <div class="links">
-        <p class="links__text">Try our other TEFL Food games.</p>
+        <p class="links__text">Try our other TEFL games.</p>
         <div class="links__images">
           <div class="links__images-1 figure">
             <a href="flashcard-foods.html">
               <img src="img/Flashcard-food.jpg" alt=""
             /></a>
-            <figcaption>Food Photo Flashcards</figcaption>
+            <figcaption>Photo Flashcards</figcaption>
           </div>
           <div class="links__images-1 figure">
             <a href="bingo-clothes.html">
               <img src="img/BingoFood.jpg" alt=""
             /></a>
-            <figcaption>Food Bingo with Printable Cards</figcaption>
+            <figcaption>Bingo with Printable Cards</figcaption>
           </div>
         </div>
       </div>
@@ -159,32 +165,7 @@
           }
         }
         preload(
-          "img/apple.png",
-          "img/carrot.png",
-          "img/grapes.png",
-          "img/lettuce.png",
-          "img/potatoes.png",
-          "img/banana.png",
-          "img/chicken.png",
-          "img/honey.png",
-          "img/spaghetti.png",
-          "img/bread.png",
-          "img/chips.png",
-          "img/ice-cream.png",
-          "img/mushrooms.png",
-          "img/tomato.png",
-          "img/burger.png",
-          "img/donut.png",
-          "img/nuts.png",
-          "img/cake.png",
-          "img/egg.png",
-          "img/jam.png",
-          "img/",
-          "img/onion.png",
-          "img/cardback.png",
-          "img/fish.png",
-          "img/kiwi.png",
-          "img/pizza.png"
+     
         );
         //--><!]]>
       </script>

@@ -57,6 +57,14 @@ h4 {
   line-height: 1.2;
   margin-bottom: 0.7rem; }
 
+.sense {
+  grid-row: 1/2;
+  grid-column: 2/3; }
+
+.sense-bottom {
+  grid-row: 5/6;
+  grid-column: 2/3; }
+
 .loader-div {
   background-color: #368cbf;
   display: flex;
@@ -146,21 +154,21 @@ h4 {
     margin: 0 5%; } }
 
 .sidebar {
-  grid-row: 1/5;
+  grid-row: 1/7;
   grid-column: 1/2;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 1rem;
-  height: 100%;
   transition: all 0.2s ease-in-out; }
   @media only screen and (max-width: 50em) {
     .sidebar {
       position: absolute;
       width: 100vw;
       z-index: 500;
-      height: auto;
+      height: 100%;
       padding: 3rem; } }
   @media only screen and (max-width: 28em) {
     .sidebar {
@@ -255,7 +263,7 @@ h4 {
   fill: darkgrey; }
 
 .sidebar-container {
-  grid-row: 1/4;
+  grid-row: 1/7;
   grid-column: 1/2;
   height: 100%; }
   @media only screen and (max-width: 50em) {
@@ -264,9 +272,6 @@ h4 {
 
 .block {
   display: block; }
-
-.sidebar__subtitle:first-of-type {
-  background: #F75F1C; }
 
 .icon {
   margin-right: 3rem; }
@@ -296,7 +301,6 @@ h4 {
   @media only screen and (max-width: 37.5em) {
     .extra {
       top: 60%;
-      origin: center;
       width: 320px;
       height: 700px; } }
 
@@ -470,7 +474,7 @@ h4 {
 
 .introduction {
   position: relative;
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 2/3;
   width: 800px;
   height: auto;
@@ -665,7 +669,7 @@ h4 {
   align-items: center;
   background-color: #d0eaf8;
   margin: 0 auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 23rem 1fr; }
   @media only screen and (max-width: 75em) {
     .wrapper {
@@ -684,7 +688,7 @@ h4 {
   display: flex;
   flex-direction: column;
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
   width: 800px;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -743,7 +747,14 @@ h4 {
   color: #ffe164;
   font-family: Montserrat; }
 
-.top, .div1, .div2, .div3, .div4, .div5, .div6, .points-div {
+.top,
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.points-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -792,7 +803,7 @@ h4 {
 
 .but {
   width: 50px;
-  background-color: #008CBA;
+  background-color: #008cba;
   margin-top: 30px;
   height: 40px;
   width: 80px;
@@ -800,7 +811,7 @@ h4 {
   border: none;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   color: white;
-  border-color: #008CBA;
+  border-color: #008cba;
   background-color: #da291c;
   text-transform: uppercase; }
   .but:hover {
@@ -821,7 +832,7 @@ h4 {
   color: white; }
 
 .links {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 2/3;
   width: 800px;
   height: auto;

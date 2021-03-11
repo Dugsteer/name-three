@@ -59,56 +59,119 @@ myFunction(blue);
 
 //GAME FUNCTIONALITY
 var lists = [
-  ['places to eat', 'dining room', 'kitchen', 'restaurant', 'cafe', 'park', 'beach'],
-  ['vehicles', 'car', 'motorbike', 'bike', 'train', 'bus', 'camel'],
-  ['fruits', 'apple', 'pear', 'banana', 'orange', 'kiwi', 'lemon'],
-  ['weather', 'sunny', 'rainy', 'cloudy', 'windy', 'snowy', 'stormy'],
-  ['pets', 'dog', 'cat', 'rabbit', 'guinea pig', 'hamster', 'mouse'],
-  ['clothes', 'shirt', 'hat', 'trousers', 'jacket', 'jumper', 'belt'],
-  ['colors', 'red', 'green', 'blue', 'purple', 'yellow', 'black'],
-  ['jobs', 'doctor', 'teacher', 'builder', 'police officer', 'footballer', 'artist'],
-  ['places in Town', 'Baker\'s', 'Cinema', 'Supermarket', 'Chemist\'s', 'Police Station', 'School'],
-  ['sports', 'Football', 'Basketball', 'Tennis', 'Aikido', 'Swimming', 'Cycling'],
-  ['That\'s All Folks!']
-]
+  [
+    "superheroes: batman...",
+    "ironman",
+    "spiderman",
+    "thor",
+    "captain marvel",
+    "black panther",
+    "captain america",
+  ],
+  [
+    "illnesses: sore throat...",
+    "cough",
+    "cold",
+    "temperature",
+    "stomach-ache",
+    "headache",
+    "earache",
+  ],
+  [
+    "daily actions: get up...",
+    "have a shower",
+    "brush my teeth",
+    "eat dinner",
+    "come home",
+    "go to school",
+    "go to bed",
+  ],
+  [
+    "personal things: belt...",
+    "watch",
+    "necklace",
+    "ring",
+    "earring",
+    "nose ring",
+    "bracelet",
+  ],
+  [
+    "video games: starting with F",
+    "FIFA ",
+    "final fantasy",
+    "fortnite",
+    "far cry",
+    "fishing planet",
+    "fat city",
+  ],
+  ["patterns: checked...", "striped", "colourful", "flowery", "checked", "spotty", "plain"],
+  [
+    "chores: washing dishes...",
+    "cooking",
+    "drying up",
+    "gardening",
+    "painting",
+    "sweeping",
+    "watering flowers",
+  ],
+  ["descriptions: lazy...", "clever", "untidy", "hard-working", "weak", "strong", "tidy"],
+  ["food: potatoes...", "fish", "meat", "fruit", "salad", "vegetables", "rice"],
+  [
+    "places in Town: school...",
+    "Baker's",
+    "Cinema",
+    "Supermarket",
+    "Chemist's",
+    "Police Station",
+    "Butcher's",
+  ],
+  [
+    "xtreme sports: bmx...",
+    "ice climbing",
+    "BASE jumping",
+    "parkour",
+    "surfing",
+    "paragliding",
+    "bungee jumping",
+  ],
+  ["That's All Folks!"],
+];
 
-
-const answer0 = document.getElementById('answer0');
-const answer1 = document.getElementById('answer1');
-const answer2 = document.getElementById('answer2');
-const answer3 = document.getElementById('answer3');
-const answer4 = document.getElementById('answer4');
-const answer5 = document.getElementById('answer5');
-const answer6 = document.getElementById('answer6');
+const answer0 = document.getElementById("answer0");
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
+const answer3 = document.getElementById("answer3");
+const answer4 = document.getElementById("answer4");
+const answer5 = document.getElementById("answer5");
+const answer6 = document.getElementById("answer6");
 
 i = -1;
-j=0;
+j = 0;
 
-function clearTable(){
- answer1.innerText = "";
- answer2.innerText = "";
- answer3.innerText = "";
- answer4.innerText = "";
- answer5.innerText = "";
- answer6.innerText = "";
- answer0.innerText = "";
+function clearTable() {
+  answer1.innerText = "";
+  answer2.innerText = "";
+  answer3.innerText = "";
+  answer4.innerText = "";
+  answer5.innerText = "";
+  answer6.innerText = "";
+  answer0.innerText = "";
 }
 
-function mainlist(){
-  if(answer0.innerText ==='THAT\'S ALL FOLKS!'){
-     window.location.reload();
-  } else
-if(i === 6){
-   clearTable();
-     j++;
-     i=0;
-     const  green = `answer${i}`
-     let currentArray = lists[j];
-     window[green].innerText = currentArray[i].toUpperCase();
+function mainlist() {
+  if (answer0.innerText === "THAT'S ALL FOLKS!") {
+    window.location.reload();
+  } else if (i === 6) {
+    clearTable();
+    j++;
+    i = 0;
+    const green = `answer${i}`;
+    let currentArray = lists[j];
+    window[green].innerText = currentArray[i].toUpperCase();
   } else {
-  i++;
-const  green = `answer${i}`
-let currentArray = lists[j];
-window[green].innerText = currentArray[i].toUpperCase();
-}
+    i++;
+    const green = `answer${i}`;
+    let currentArray = lists[j];
+    window[green].innerText = currentArray[i].toUpperCase();
+  }
 }

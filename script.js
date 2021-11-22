@@ -60,16 +60,16 @@ myFunction(blue);
 //GAME FUNCTIONALITY
 var lists = [
   [
-    "superheroes: batman...",
+    "superheroes like batman...",
     "ironman",
     "spiderman",
     "thor",
-    "captain marvel",
-    "black panther",
     "captain america",
+    "black panther",
+    "captain marvel",
   ],
   [
-    "illnesses: sore throat...",
+    "illnesses like a sore throat...",
     "cough",
     "cold",
     "temperature",
@@ -78,7 +78,7 @@ var lists = [
     "earache",
   ],
   [
-    "daily actions: get up...",
+    "daily actions like get up...",
     "have a shower",
     "brush my teeth",
     "eat dinner",
@@ -87,7 +87,7 @@ var lists = [
     "do my homework",
   ],
   [
-    "personal things: belt...",
+    "personal things like a belt...",
     "watch",
     "necklace",
     "bracelet",
@@ -96,7 +96,7 @@ var lists = [
     "ring",
   ],
   [
-    "video games: starting with F",
+    "video games starting with F",
     "FIFA 2021",
     "final fantasy",
     "far cry",
@@ -105,16 +105,16 @@ var lists = [
     "fortnite",
   ],
   [
-    "patterns: checked...",
+    "patterns like checked...",
     "striped",
     "colourful",
     "flowery",
     "checked",
-    "spotty",
+    "spotted",
     "plain",
   ],
   [
-    "chores: washing up...",
+    "chores like washing up...",
     "cooking",
     "drying up",
     "watering the flowers",
@@ -123,7 +123,7 @@ var lists = [
     "tidying my room",
   ],
   [
-    "descriptions: lazy...",
+    "descriptions like lazy...",
     "clever",
     "untidy",
     "hard-working",
@@ -131,9 +131,17 @@ var lists = [
     "strong",
     "tidy",
   ],
-  ["food: potatoes...", "fish", "meat", "fruit", "salad", "vegetables", "rice"],
   [
-    "places in Town: Butcher's...",
+    "food like potatoes...",
+    "fish",
+    "meat",
+    "fruit",
+    "salad",
+    "vegetables",
+    "rice",
+  ],
+  [
+    "places in town like the Butcher's...",
     "Baker's",
     "Cinema",
     "Supermarket",
@@ -142,7 +150,7 @@ var lists = [
     "School",
   ],
   [
-    "xtreme sports: bmx...",
+    "xtreme sports like bmx...",
     "ice climbing",
     "BASE jumping",
     "bunjee jumping",
